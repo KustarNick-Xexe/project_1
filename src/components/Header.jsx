@@ -3,8 +3,10 @@ import Navbar from './Navbar';
 
 const Header = ({ items, isSignIn }) => {
     return (
-        //TODO: вставить логотип
-        <Navbar items={ items }/>
+        <header>
+            {/*  TODO: вставить логотип */}
+            <Navbar items={ items }/>
+        </header>
     )
 };
 
