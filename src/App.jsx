@@ -7,6 +7,8 @@ import Descriptions from './components/Descriptions';
 import Cards from './components/Cards';
 import Steps from './components/Steps';
 import Comments from './components/Comments';
+import ConnectionForm from './components/ConnectionForm';
+import Footer from './components/Footer';
 
 const App = () => {
   const desp = [
@@ -81,6 +83,17 @@ const App = () => {
     },
   ]
 
+  const links = [
+    {
+      mainItem: "Telegram чат",
+      items: ["О нас", "Партнеры", "Инструкция", "Цены", "Контакты"]
+    },
+    {
+      mainItem: "Telegram чат",
+      items: ["О нас", "Партнеры", "Инструкция", "Цены", "Контакты"]
+    },
+  ]
+
 
   return (
       <>
@@ -109,7 +122,16 @@ const App = () => {
         <div className='section-5'>
           <h2>Отзывы клиентов</h2>
           <Comments items={ comments }/>
+          <div className='slider'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
+        <div className='section-6'>
+          <ConnectionForm header="Подключите Telegram чат уже сегодня" />
+        </div>
+        <Footer links={ links }/>
       </>
     );
 };

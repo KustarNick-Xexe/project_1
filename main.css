@@ -1,15 +1,4 @@
 * {
     font-size: 18px;
-    /* font-family: "Gilroy"; */
-}
-
-Button {
-    background-color: #685ED6;
-    color:#FFFFFF;
-    font-family: 'Gilroy';
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 24px;
-    border-radius: 6px;
-    padding: 12px 54px;
+    font-family: "Gilroy";
 }
