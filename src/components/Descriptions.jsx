@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DescriptionList = ({ items }) => {
+const Descriptions = ({ items }) => {
     return (
         <>
             <ul>
@@ -15,4 +15,4 @@ const DescriptionList = ({ items }) => {
     )
 };
 
-export default DescriptionList;
+export default Descriptions;
