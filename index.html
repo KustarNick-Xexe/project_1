@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>My First React App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="./src/App.jsx"></script>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles_index.css">
+</head>
+
+<body>
+    <div class="main__bg-info">
+        <img src="src/images/main_bg_intro.png" alt="">
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">
+                <img src="src/images/logo.png" alt="">
+            </div>
+            <div class="header__title">
+                tocha
+            </div>
+       
+            <div class="menu__items">
+                <div class="menu__items-inner">
+                    <a class="menu__item active">
+                        Подключение
+                    </a>
+                    <a class="menu__item">
+                        Оплата
+                    </a>
+                    <a class="menu__item">
+                        Контакты
+                    </a>
+                    <a class="menu__item">
+                        Выход
+                    </a>
+                </div>
+            </div>
+        </div>
+       
+    </header>
+   <div class="main__intro">
+    <div class="container">
+        <div class="main__intro-inner">
+            <div class="main__intro-content">
+                <div class="intro-content__title">
+                    <span>Telegram чат</span> 
+                    на вашем сайте
+                </div>
+                <div class="intro-content__description">
+                    Общение с клиентами станет простым
+                    и удобным, а подключение займет 5 минут.
+                    Первый месяц — бесплатно!
+                </div>
+                <button class="intro">
+                    Подключить
+                </button>
+
+            </div>
+            <div class="main__intro-img">
+                <img src="src/images/main__phone.png" alt="">
+            </div>
+        </div>
+    </div>
+   </div>
+   
+</body>
+
 </html>
