@@ -32,8 +32,7 @@ a{
 .container{
     width: calc(100% - 330px);
     margin: auto 165px;
-    
-   
+    position: relative;
 }
 .header{
     margin-top: 46px;
@@ -249,6 +248,7 @@ section.description{
 .connection{
     margin-top: 100px;
 }
+
 .connection__title{
     font-weight: 800;
     font-size: 46px;
@@ -259,7 +259,14 @@ section.description{
 img.connection__steps__intro-pic{
     display: block;
     margin: auto;
+    
 }
+
+.connection__steps-inner {
+    margin: 0 auto;
+    display: flex;
+}
+
 .connection__step{
     max-width: 214px;
     position: relative;
@@ -285,13 +292,14 @@ img.connection__steps__intro-pic{
     color:#1D2530;
     margin: auto;
     text-align: center;
-
 }
+
 .connection__step-text{
     font-size: 16px;
     line-height: 26px;
     text-align: center;
 }
+
 #step1{
     bottom: 315px;
     left: 210px;
@@ -315,32 +323,62 @@ img.connection__steps__intro-pic{
 }
 
 .feedback__title{
-    text-align: center;
-    margin-left:390px;
+    font-weight: 800;
     font-size: 46px;
     line-height: 64px;
-    font-weight: 800;
-    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
 }
 img.feedback_quote-img{
-    margin-left:160px;
+    position: absolute;
+    top: -16px;
+    right: 36px;
 }
+
+.feedback__feedback {
+    width: 50%;
+}
+
 .feedback__inner{
     display: flex;
     justify-content: space-between;
+    /* gap: 30px; */
     min-width: 540px;
+    width: 100%;
     margin-top: 50px;
 }
-.feedback__shadow-box{
-    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
-    width: 540px;
-    text-align: center;
-    width: 476px;
-    max-height: 200px;
-    height: 100%;
-    border-radius: 6px;
-    
+
+.feedback__inner .feedback__shadow-box:first-of-type{
+    margin-right: 30px; /*вместо гепа*/
 }
+
+.feedback__shadow-box{
+    position: relative;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+    text-align: center;
+    padding: 32px 32px 56px 32px;
+    border-radius: 6px;
+}
+
+.feedback__shadow-box::after { 
+    content: "";
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    transform: translateX(-50%); 
+    transform: translateY(5%); /* хз насчет этого */
+    display: block;
+    height: 24px;
+    width: 24px;
+    background-color: rgba(255, 255, 255, 1);
+    clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+    transform: rotate(-45deg);
+    border-radius: 0 0 0 0.25em;
+    margin: 0;
+    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+}
+
 /* 
 .feedback__shadow-box::after{
     position: absolute;
@@ -358,20 +396,28 @@ img.feedback_quote-img{
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
-    /* margin-top: 32px; */
 }
 .feedback__feedback-text{
     text-align: center;
-    padding: 8px 32px 56px;
+    padding-top: 8px;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
     
 }
-.feedback__author-info{
-    
-   
+
+.feedback__author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 28px 0 32px;
 }
+
+.feedback__author-img {
+    margin-right: 16px;
+}
+
 .feedback__author-name{
     margin: auto;
+    font-weight: 700;
 }
